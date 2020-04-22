@@ -182,24 +182,34 @@ html {
 }
 .info-section {
   display: flex;
+  justify-content: space-between;
 }
-.info-section p {
-  font-size: 1em;
-  padding: 1%;
+.info-section .company {
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+}
+.info-section .company h3 {
+  font-size: 2em;
+  padding: 2%;
+}
+.info-section .company p {
+  font-size: 1.6em;
+  font-weight: 100;
 }
 .info-section h2 {
-  font-size: 2em;
-  padding: 1%;
+  font-size: 2.6em;
+  padding: 4% 0 2% 1%;
+  font-weight: 600;
+  border-bottom: 2px solid gray;
 }
 .info-section .left-side {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  padding: 2%;
+  width: 30%;
 }
 .info-section .right-side {
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding: 2% 3%;
 }

@@ -64,6 +64,7 @@ html, body {
 	display: flex;
 	flex-direction: column;
 }
+
 /////// MIXINS ///////
 
 
@@ -124,28 +125,40 @@ html{
 
 .info-section {
 	display: flex;
+	justify-content: space-between;
 
-	p{
-		font-size: 1em;
-		padding: 1%;
+	.company{
+		display: flex;
+		align-items: center;
+		padding-top: 3%;
+
+		h3 {
+			font-size: 2em;
+			padding: 2%;
+		}
+
+		p{
+			font-size: 1.6em;
+			font-weight: 100;
+		}
 	}
 
+
+
 	h2 {
-		font-size: 2em;
-		padding: 1%;
+		font-size: 2.6em;
+		padding: 4% 0 2% 1%;
+		font-weight: 600;
+		border-bottom: 2px solid gray;
 	}
 
 	.left-side {
 		.flexColumn();
-		width: 33%;
-		padding: 2%;
-
-
+		width: 30%;
 	}
 
 	.right-side {
 		.flexColumn();
 		width: 60%;
-		padding: 2% 3%;
 	}
 }
