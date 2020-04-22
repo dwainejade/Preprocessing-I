@@ -142,34 +142,54 @@ html {
 }
 .navbar {
   display: flex;
-  font-size: 3rem;
+  font-size: 2.2rem;
   justify-content: space-evenly;
+  margin: 2% 0;
+  background-color: #868686;
+  padding: 2% 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
 }
 .head {
   display: flex;
-  align-items: center;
   justify-content: center;
+  height: 25vh;
+  width: auto;
 }
 .head img {
-  height: 200px;
+  object-fit: cover;
 }
 .head h1 {
-  font-size: 5em;
+  font-size: 4em;
   color: white;
-  padding: 5rem;
+  padding: 1rem;
+  text-align: center;
 }
 .head h2 {
   color: white;
-  font-size: 2em;
+  font-size: 1.7em;
+  text-align: left;
+  padding: 1rem;
 }
 .head .name {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   background-color: #305d7a;
+  justify-content: center;
+  padding: 0 5%;
 }
 .info-section {
   display: flex;
+}
+.info-section p {
+  font-size: 1em;
+  padding: 1%;
+}
+.info-section h2 {
+  font-size: 2em;
+  padding: 1%;
 }
 .info-section .left-side {
   display: flex;
@@ -177,15 +197,9 @@ html {
   width: 33%;
   padding: 2%;
 }
-.info-section .left-side h2 {
-  font-size: 2em;
-}
 .info-section .right-side {
   display: flex;
   flex-direction: column;
   width: 60%;
   padding: 2% 3%;
-}
-.info-section .right-side h2 {
-  font-size: 2em;
 }
