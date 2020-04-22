@@ -54,7 +54,80 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
-//linked
+/////////////// CODE  STARTS HERE ///////////////
+
+/////// MIXINS ///////
+.flexColumn() {
+	display: flex;
+	flex-direction: column;
+}
+/////// MIXINS ///////
+
+
+html{
+	font-size: 62.5%;
+}
+
+.main-container {
+	margin: 1% 3%;
+}
+
+.navbar {
+	display: flex;
+	font-size: 3rem;
+	justify-content: space-evenly;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		height: 200px;
+	}
+
+	h1 {
+		font-size: 5em;
+		color: white;
+		padding: 5rem;
+	}
+	h2 {
+		color: white;
+		font-size: 2em;
+	}
+
+	.name {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		background-color: rgb(48, 93, 122);
+	}
+}
+
+.info-section {
+	display: flex;
+
+	.left-side {
+		.flexColumn();
+		width: 33%;
+		padding: 2%;
+
+		h2 {
+			font-size: 2em;
+		}
+	}
+
+	.right-side {
+		.flexColumn();
+		width: 60%;
+		padding: 2% 3%;
+
+		h2 {
+			font-size: 2em;
+		}
+	}
+}
