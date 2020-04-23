@@ -290,3 +290,6 @@ footer {
   height: 3rem;
   background-color: #3c4151;
 }
+form {
+  margin: 2% 0;
+}
